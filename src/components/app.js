@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/app.css';
-import logo from '../assets/images/pizza.jpeg';
+import logo from '../assets/images/gif.gif';
 
 const App = () => (
     <div>
