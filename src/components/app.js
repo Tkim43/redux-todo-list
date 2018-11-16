@@ -1,13 +1,14 @@
 import React from 'react';
 import '../assets/css/app.css';
-import logo from '../assets/images/pizza.jpeg';
+import 'materialize-css/dist/js/materialize'
+import 'materialize-css/dist/css/materialize.min.css'
+import logo from '../assets/images/cute.gif';
 
 const App = () => (
-    <div>
-        <div className="app">
-            <img src={logo} className="logo rotate"/>
-            <h1>Pizza Dog Time</h1>
-        </div>
+    <div className="container">
+        <img src={logo} className="center logo rotate"/>
+        <h1 className="center">Pikachu To do List</h1>
+        <p className="center grey-text">now with Redux</p>
     </div>
 );
 
