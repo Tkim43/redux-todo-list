@@ -2,13 +2,12 @@ import React from 'react';
 import '../assets/css/app.css';
 import 'materialize-css/dist/js/materialize'
 import 'materialize-css/dist/css/materialize.min.css'
-import logo from '../assets/images/cute.gif';
+import List from './list'
+import {Route} from 'react-router-dom'
 
 const App = () => (
     <div className="container">
-        <img src={logo} className="logo rotate"/>
-        <h1 className="center">Pikachu To do List</h1>
-        <p className="center grey-text">now with Redux</p>
+        <Route path="/" exact component={List}/>
     </div>
 );
 
