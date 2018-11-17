@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import logo from "../assets/images/cute.gif";
 import {connect} from 'react-redux'
 import {getListData} from '../actions'
+import NavButton from './nav_button'
 
 
 
@@ -22,6 +23,7 @@ class List extends Component{
                 <img src={logo} className="logo rotate"/>
                 <h1 className="center blue white-text">Pikachu To do List</h1>
                 <p className="center grey-text">now with Redux</p>
+                <NavButton to='/add-item' text="Add Item" color ="dark blue"/>
                 <ul className="collection">
                     {listElements}
                 </ul>
