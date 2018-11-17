@@ -6,7 +6,7 @@ import logo from '../assets/images/cute.gif';
 
 const App = () => (
     <div className="container">
-        <img src={logo} className="center logo rotate"/>
+        <img src={logo} className="logo rotate"/>
         <h1 className="center">Pikachu To do List</h1>
         <p className="center grey-text">now with Redux</p>
     </div>
