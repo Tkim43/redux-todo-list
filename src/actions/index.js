@@ -20,6 +20,14 @@ export function getListData(){
     }
 }
 
+export function addToDoItem(item){
+    const resp = axios.post(BASE_URL + API_KEY,item);
+
+    return{
+        type: types.ADD_LIST_ITEM,
+        payload: resp
+    }
+}
 
 
 
