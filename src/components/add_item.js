@@ -37,6 +37,9 @@ class AddItem extends Component{
         this.props.history.push('/');
 
     }
+    function(){
+        
+    }
     render(){
         console.log("add item:", this.props)
         const {handleSubmit, reset} = this.props;
