@@ -3,9 +3,7 @@ import logo from "../assets/images/cute.gif";
 import {connect} from 'react-redux'
 import {getListData} from '../actions'
 import NavButton from './nav_button'
-
-
-
+import {Link} from 'react-router-dom'
 
 class List extends Component{
     componentDidMount(){
@@ -13,9 +11,12 @@ class List extends Component{
     }
     render(){
         console.log("list props:", this.props);
+        const linkStyle = {display: 'block', height: '100%'}
         const listElements = this.props.todos.map(item =>{
             return (
-                <li className=" collection-item" key={item._id}>{item.title}</li>
+                <li className=" collection-item" key={item._id}>
+                <Link style = {linkStyle} to={`/item/${item._id}`}>{item.title}</Link>
+                </li>
             )
         });
         return(

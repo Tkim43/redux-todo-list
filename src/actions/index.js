@@ -29,6 +29,17 @@ export function addToDoItem(item){
     }
 }
 
+export function getSingleItem(id){
+    // url is different because we have to add in our item_id
+    // const resp = axios.get('http://api.reactprototypes.com/todos/${id}?key=tiffanydestroystheworld)
+    const resp = axios.get(`${BASE_URL}/${id + API_KEY}`)
+    // you need to dispatch the object
+    return{
+        type: types.GET_SINGLE_ITEM,
+        payload: resp
+    }
+}
+
 
 
 
